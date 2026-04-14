@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Student Records</h2>
+    <br>
+    <table border="2" cellpadding="10px">
+        <tr>
+            <th>iD/Roll Number</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+            <th>Year</th>
+            <th>Place</th>
+        </tr>
+        {% for x in data %}
+        <tr>
+            <td>{{ x.Std_id }}</td>
+            <td>{{ x.Std_name }}</td>
+            <td>{{ x.Std_Email }}</td>
+            <td>{{ x.Std_Age }}</td>
+            <td>{{ x.Std_year }}</td>
+            <td>{{ x.Std_place}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

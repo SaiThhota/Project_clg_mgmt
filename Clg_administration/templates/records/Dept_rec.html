@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Department Records</h2>
+    <br>
+    <table border="2" cellpadding="10px">
+        <tr>
+            <th>Dept ID</th>
+            <th>Dept Name</th>
+            <th>Dept Code</th>
+        </tr>
+        {% for x in data %}
+        <tr>
+            <td>{{ x.Dept_id }}</td>
+            <td>{{ x.Dept_name }}</td>
+            <td>{{ x.Dept_code }}</td>
+           
+
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

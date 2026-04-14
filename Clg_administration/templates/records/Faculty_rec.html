@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Facluty Records</h2>
+    <br>
+    <table border="2" cellpadding="10px">
+        <tr>
+            <th>ID Number</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>Department</th>
+        </tr>
+        {% for x in data %}
+        <tr>
+            <td>{{ x.Fac_id }}</td>
+            <td>{{ x.Fac_name }}</td>
+            <td>{{ x.Fac_Email  }}</td>
+            <td>{{ x.Fac_Mobile  }}</td>
+            <td>{{ x.Fac_dept }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

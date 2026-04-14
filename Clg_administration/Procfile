@@ -1,0 +1,1 @@
+web: gunicorn Clg_administration.wagi
