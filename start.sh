@@ -2,4 +2,4 @@
 
 python manage.py migrate
 python manage.py collectstatic --noinput
-gunicorn TASK1.Clg_administration.wsgi:application
+gunicorn Clg_administration.wsgi:application  --bind 0.0.0.0:$PORT
