@@ -2,4 +2,4 @@
 
 python manage.py migrate
 python manage.py collectstatic --noinput
-gunicorn Task1.Clg_administration.wsgi:application
+gunicorn TASK1.Clg_administration.wsgi:application
